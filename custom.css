@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Montserrat';
+}
+
+* {
+    font-family: 'Montserrat';
+}
+.test-image {
+    background-size: cover;
+    background-position: center;
+    animation:changeBackground 10s infinite ;
+}
+
+@keyframes changeBackground {
+    0% {background-image: url('https://images.unsplash.com/photo-1715077856124-4405d115911d?q=80&w=930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');}
+    50% {background-image: url('https://images.unsplash.com/photo-1714579328738-c882ca3d7fdc?q=80&w=928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');}
+    100% {background-image: url('https://images.unsplash.com/photo-1714891203404-b25f32706e0a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');}
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    padding: 60px;
+    }
+    
+    .item {
+    margin: 10px;
+    flex: 0 0 auto;
+    width: 300px;
+    color: white;
+    line-height: 25px;
+    }
+    
+    .item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        position: absolute;
+        right: 0;
+    }
+
+    .navbar ul li {
+        display: inline;
+        margin-right: 50px;
+    }
